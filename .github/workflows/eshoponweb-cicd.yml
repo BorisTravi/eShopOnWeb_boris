@@ -9,7 +9,7 @@ env:
   LOCATION: westeurope
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: ffd83f72-93a8-454d-9e4f-ef231298f429
-  WEBAPP-NAME: eshoponweb-webapp-BT
+  WEBAPP-NAME: eshoponweb-webapp-BT3
 
 
 jobs:
@@ -75,7 +75,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v2
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALSS }}
            
     # Deploy Azure WebApp using Bicep file
     - name: deploy
